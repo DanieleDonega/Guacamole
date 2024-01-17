@@ -5,7 +5,7 @@ services:
     image: mariadb:11.2.2
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: '4a3TlySfT0LNnItm'
+      MYSQL_ROOT_PASSWORD: '4a3TlySfT0LNnItSCA'
       MYSQL_DATABASE: 'guacamole_db'
       MYSQL_USER: 'guacamole_user'
       MYSQL_PASSWORD: '4a3TlySfT0LNnItm'
@@ -26,7 +26,7 @@ services:
       MYSQL_HOSTNAME: "guacdb"
       MYSQL_DATABASE: "guacamole_db"
       MYSQL_USER: "guacamole_user"
-      MYSQL_PASSWORD: "4a3TlySfT0LNnItm"
+      MYSQL_PASSWORD: "4a3TlySfT0LNnItmSCA"
       TOTP_ENABLED: "false"
       GUACAMOLE_HOME: /etc/guacamole
     volumes:
