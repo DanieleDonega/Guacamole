@@ -32,7 +32,7 @@ services:
     volumes:
       - '/home/administrator/guacamole:/etc/guacamole'
     depends_on:
-     - guacdb
+     - guacamoledb
      - guacd
 volumes:
   db-data:
