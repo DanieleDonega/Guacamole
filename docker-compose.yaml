@@ -23,7 +23,7 @@ services:
       - 8080:8080
     environment:
       GUACD_HOSTNAME: "guacd"
-      MYSQL_HOSTNAME: "guacdb"
+      MYSQL_HOSTNAME: "guacamoledb"
       MYSQL_DATABASE: "guacamole_db"
       MYSQL_USER: "guacamole_user"
       MYSQL_PASSWORD: "4a3TlySfT0LNnItmSCA"
