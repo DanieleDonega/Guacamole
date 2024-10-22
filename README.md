@@ -4,7 +4,7 @@
 3)Add skip-grant-tables under [mysqld]
 4)Restart MySQL (sudo /etc/init.d/mysql restart)
 
-5)cd guacamole/etc/extensions/wget https://github.com/DanieleDonega/Guacamole/blob/main/guacamole-auth-radius-1.5.4.jar
+5)cd guacamole/etc/extensions/wget https://github.com/DanieleDonega/Guacamole/blob/main/guacamole-auth-radius-1.5.3.jar
 6)create guacamole.properties on guacamole/etc/
 
 After deploy containers:
