@@ -5,10 +5,10 @@ services:
     image: mysql
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: '4a3TlySfT0LNnItSCA'
-      MYSQL_DATABASE: 'guacamole_db'
-      MYSQL_USER: 'guacamole_user'
-      MYSQL_PASSWORD: '4a3TlySfT0LNnItm'
+      MYSQL_ROOT_PASSWORD: "4a3TlySfT0LNnItSCA"
+      MYSQL_DATABASE: "guacamole_db"
+      MYSQL_USER: "guacamole_user"
+      MYSQL_PASSWORD: "4a3TlySfT0LNnItSCA"
     volumes:
       - '/home/administrator/db-data:/var/lib/mysql'
   guacd:
@@ -26,13 +26,19 @@ services:
       MYSQL_HOSTNAME: "guacamoledb"
       MYSQL_DATABASE: "guacamole_db"
       MYSQL_USER: "guacamole_user"
-      MYSQL_PASSWORD: "4a3TlySfT0LNnItmSCA"
+      MYSQL_PASSWORD: "4a3TlySfT0LNnItSCA"
       TOTP_ENABLED: "false"
       GUACAMOLE_HOME: /etc/guacamole
+    
     volumes:
-      - '/home/administrator/guacamole:/etc/guacamole'
+      - '/home/administrator/guacamole/etc:/etc/guacamole'
+      - '/home/administrator/guacamole/tomcat:/home/guacamole/tomcat'
+      
+          
+     
     depends_on:
      - guacamoledb
      - guacd
 volumes:
   db-data:
+
